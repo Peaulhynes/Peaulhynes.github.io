@@ -3,6 +3,19 @@
   emailjs.init('4D8PJfNYxidc32JD-');
 })();
 
+function onSubmit(token) {
+  console.log("pouet")
+}
+
+function onClick(e) {
+  e.preventDefault();
+  grecaptcha.ready(function() {
+    grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+        // Add your logic to submit to your backend server here.
+    });
+  });
+}
+
 function scrollSmoothTo(elementId) {
   var element = document.getElementById(elementId);
   element.scrollIntoView({
