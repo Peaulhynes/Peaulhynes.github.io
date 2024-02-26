@@ -1,6 +1,6 @@
 (function() {
   // https://dashboard.emailjs.com/admin/account
-  emailjs.init('4D8PJfNYxidc32JD-');
+  emailjs.init('2LD0BCdb7D7MoQne2');
 })();
 
 function onSubmit(token) {
