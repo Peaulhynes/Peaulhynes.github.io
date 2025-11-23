@@ -1,6 +1,5 @@
 import {Routes} from '@angular/router';
 import {Home} from './home/home';
-import {Details} from './work/details/details';
 import { About } from './about/about';
 import { Work } from './work/work';
 import { Contact } from './contact/contact';
@@ -8,11 +7,6 @@ const routeConfig: Routes = [
   {
     path: '',
     component: Home,
-    title: 'Pauline Wargny',
-  },
-  {
-    path: 'details/:id',
-    component: Details,
     title: 'Pauline Wargny',
   },
   {

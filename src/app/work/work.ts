@@ -8,17 +8,13 @@ import {ProjectInfo} from './projectinfo';
   selector: 'app-work',
   imports: [ProjectPresentation],
   template: `
-    <section>
-      <form>
-        <input type="text" placeholder="Filter by city" />
-        <button class="primary" type="button">Search</button>
-      </form>
-    </section>
-    <section class="results">
+  <div id="gallery">
+    
       @for(projects of projectList; track $index) {
         <app-projectpresentation [projectPresentation]="projects" />
       }
-    </section>
+    
+  </div>
   `,
   styleUrls: ['./work.css'],
 })
