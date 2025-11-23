@@ -3,7 +3,7 @@ export interface ProjectInfo {
   name: string;
   presentation: string[];
   contribution?: string[];
-  languages: string[];
+  languages?: string[];
   photos: string[];
   exe?: string;
   code?: string;

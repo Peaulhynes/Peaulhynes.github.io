@@ -87,7 +87,7 @@ import {RouterLink} from '@angular/router';
               }
 
               @if(projectPresentation().exe){
-                <button class="raise"><a href="{{projectPresentation().exe}}" target="_blank">Executable</a></button>
+                <button class="raise"><a href="{{projectPresentation().exe}}" target="_blank">Download</a></button>
               }
               
             </div>
