@@ -1,0 +1,50 @@
+.section-about{
+  margin: 0;
+  padding: 50px 20px;
+}
+
+.section-about p{
+  color: white;
+  line-height: 30px;
+  margin:20px 40px;
+  text-align: justify;
+}
+
+
+.section-about h1{
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  margin:40px;
+}
+
+.presentation{
+  margin-bottom:110px;
+  margin-top:60px;
+}
+
+@media screen and (max-width: 767px) {
+  .section-about p{
+    font-size: 16px;
+    margin:10px 20px;
+  }
+  .section-about .photo{
+    margin-bottom: 50px;
+  }
+  .presentation{
+    margin-bottom:80px;
+    margin-top:30px;
+  }
+}
+
+.center{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line{
+  
+  width: 50%;
+  height: 2px;
+  border-bottom: 1px solid white;
+}
