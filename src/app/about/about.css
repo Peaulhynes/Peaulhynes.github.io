@@ -1,4 +1,5 @@
 .section-about{
+    background-color: #3d3d3d;
   margin: 0;
   padding: 50px 20px;
 }
@@ -9,7 +10,6 @@
   margin:20px 40px;
   text-align: justify;
 }
-
 
 .section-about h1{
   text-align: center;
@@ -47,4 +47,176 @@
   width: 50%;
   height: 2px;
   border-bottom: 1px solid white;
+}
+
+.col-lg-5 .photo{
+  
+  width:70%;
+  border-radius: 15px;
+}
+
+.about{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.cv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-lg-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-white .raise a{
+  color:#000;
+  background-color: white;
+}
+
+.competences{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.competences img{
+  width:80px;
+  height:80px;
+  margin:20px;
+  object-fit: contain;
+}
+
+.competences .langage{
+  flex-basis: 80px;
+	flex-grow: 0;
+	flex-shrink: 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.competences-title{
+  text-align: center !important;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom:10px !important;
+}
+.skills{
+  margin: 10px 0 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .skills{
+    margin-bottom: 70px;
+  }
+}
+
+.langage p{
+  margin:0;
+  font-size:14px;
+}
+
+.col-lg-6{
+  vertical-align: middle;
+}
+
+.heading1{
+  text-align: center;
+  width: 100%;
+  margin:70px 0px;
+}
+
+.heading1 > h2 {
+  color: #f2f2f2;
+  display: inline-block;
+  font-size: 75px;
+  letter-spacing: -5px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .heading1{
+    margin-bottom: 100px;
+  }
+}
+
+
+.sub-heading {
+  color: rgb(210, 210, 210);
+  display: inline-block;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.section-white .heading1 > h2 {
+  color: #222222;
+}
+
+.section-white .sub-heading {
+  color: rgb(46, 46, 46);
+}
+
+@media screen and (max-width: 767px) {
+  .heading1 > h2 {
+    font-size: 40px;
+    letter-spacing: -3px;
+  }
+  .sub-heading {
+    float: left;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    display: inherit;
+  }
+  .sub-heading > h3 {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+}
+
+.raise {
+  margin:30px 30px 0px;
+  min-width: max-content;
+  width: 25%;
+  background-color:white;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  color: #530761;
+  transition: 0.25s;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 25px;
+}
+
+.raise a{
+  width:100%;
+  display:block;
+  text-align:center;
+  text-decoration: none;
+  color:black;
+  line-height: 50px;
+}
+
+.raise:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #f373ed;
+  transform: translateY(-0.25em);
+  color:#f373ed;
+}
+
+@media screen and (max-width: 767px) {
+  .raise {
+    width: 40%;
+    font-size: 20px;
+    margin:0px 3px 20px 3px;
+  }
 }
