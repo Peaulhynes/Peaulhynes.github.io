@@ -3,7 +3,9 @@ import {Component} from '@angular/core';
   selector: 'app-home',
   imports: [],
   template: `
+  <section class="section-home">
     <p> ACCUEIL </p>
+    </section>
   `,
   styleUrls: ['./home.css'],
 })

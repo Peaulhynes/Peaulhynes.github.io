@@ -1,5 +1,4 @@
 .section-about{
-    background-color: #3d3d3d;
   margin: 0;
   padding: 50px 20px;
 }
@@ -148,7 +147,6 @@
   }
 }
 
-
 .sub-heading {
   color: rgb(210, 210, 210);
   display: inline-block;
@@ -191,7 +189,7 @@
   border: 2px solid;
   font: inherit;
   line-height: 1;
-  color: #530761;
+  color: rgb(9, 57, 47);
   transition: 0.25s;
   text-transform: uppercase;
   font-weight: 1000;
@@ -208,9 +206,9 @@
 }
 
 .raise:hover {
-  box-shadow: 0 0.5em 0.5em -0.4em #f373ed;
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(85, 220, 191);
   transform: translateY(-0.25em);
-  color:#f373ed;
+  color:rgb(95, 201, 178);
 }
 
 @media screen and (max-width: 767px) {
