@@ -2,7 +2,7 @@ import {Routes} from '@angular/router';
 import {Home} from './home/home';
 import { About } from './about/about';
 import { Work } from './work/work';
-import { ConfirmDialog } from './confirm-dialog/confirm-dialog';
+import { WorkDetails } from './work/workdetails/workdetails';
 const routeConfig: Routes = [
   {
     path: '',
@@ -20,9 +20,9 @@ const routeConfig: Routes = [
     title: 'Pauline Wargny',
   },
   {
-    path: 'ConfirmDialog',
-    component: ConfirmDialog,
-    title: 'ConfirmDialog',
+    path: 'workDetails/:id',
+    component: WorkDetails,
+    title: 'Pauline Wargny',
   },
 ];
 export default routeConfig;

@@ -240,5 +240,7 @@ export class Projects {
   getAllProjects(): ProjectInfo[] {
     return this.projectList;
   }
-  
+  getProjectById(id: number): ProjectInfo | undefined {
+    return this.projectList.find((project) => project.id === id);
+  }
 }
