@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+
 import {RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
@@ -9,7 +10,6 @@ import {RouterLink, RouterOutlet} from '@angular/router';
       <a [routerLink]="['/']">HOME</a>
       <a [routerLink]="['/about']">ABOUT</a>
       <a [routerLink]="['/work']">WORK</a>
-      <a [routerLink]="['/contact']">CONTACT</a>
 
       <section class="content">
         <router-outlet />
@@ -20,4 +20,5 @@ import {RouterLink, RouterOutlet} from '@angular/router';
 })
 export class App {
   title = 'homes';
+  
 }
