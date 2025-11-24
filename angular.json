@@ -41,6 +41,11 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "stylePreprocessorOptions": {
+              "sass": {
+                "silenceDeprecations": ["color-functions", "global-builtin", "import"]
+              }
+            },
             "outputPath": "dist/first-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
