@@ -1,29 +1,38 @@
-import {Component, input, inject} from '@angular/core';
+import {Component, input, Input, inject} from '@angular/core';
+import { Injectable } from '@angular/core';
 import {ProjectInfo} from '../projectinfo';
 import {Projects} from '../projects';
-import { MatDialog } from '@angular/material/dialog';
-import { WorkDetails } from '../workdetails/workdetails';
-import {RouterLink} from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { MyModalComponent } from '../../my-modal/my-modal';
 
 @Component({
   selector: 'app-projectpresentation',
-  imports: [RouterLink],
+  imports: [CommonModule],
   template: `
-    <a class="link" [routerLink]="['/workDetails', projectPresentation().id]" data-aos="zoom-in" data-aos-once="true" class="projectimage" style="background-image:url('{{ projectPresentation().photos[0] }}')">
-      <figcaption>{{ projectPresentation().name }}</figcaption>
-    </a>
+
+  <button class="projectimage" (click)="openModal()" style="background-image:url('{{ projectPresentation().photos[0] }}')">
+  <figcaption>{{ projectPresentation().name }}</figcaption>
+</button>
+
   `,
   styleUrls: ['./projectpresentation.css'],
 })
 
+@Injectable({ providedIn: 'root' })
 export class ProjectPresentation {
   projectPresentation = input.required<ProjectInfo>();
   projectList: ProjectInfo[] = [];
   projects: Projects = inject(Projects);
-  readonly dialog = inject(MatDialog);
-  openConfirmDialog(): void {
-    this.dialog.open(WorkDetails, {});
+
+  constructor(private modalService: NgbModal) {}
+
+  openModal() {
+    const modalRef = this.modalService.open(MyModalComponent, {
+    });
+    modalRef.componentInstance.projectPresentation = this.projectPresentation();
+
   }
-  
+
 }
   
