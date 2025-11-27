@@ -1,0 +1,14 @@
+<section>
+  <div class="header">
+      <h1>Projets</h1>
+      <div class="sub-header">
+        <h2>Etudes</h2>
+        <h2>Entreprise</h2>
+      </div>
+    </div>
+  <div id="gallery">
+    @for(projects of projectList; track $index) {
+      <app-projectpresentation [projectPresentation]="projects" />
+    }
+  </div>
+  </section>

@@ -4,19 +4,13 @@ import {ProjectInfo} from '../projectinfo';
 import {Projects} from '../projects';
 import { CommonModule } from '@angular/common';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { MyModalComponent } from '../../my-modal/my-modal';
+import { ModalComponent } from '../modal/modal';
 
 @Component({
   selector: 'app-projectpresentation',
   imports: [CommonModule],
-  template: `
-
-  <button class="projectimage" (click)="openModal()" style="background-image:url('{{ projectPresentation().icon }}')">
-  <figcaption>{{ projectPresentation().name }}</figcaption>
-  </button>
-
-  `,
-  styleUrls: ['./projectpresentation.css'],
+  templateUrl:"projectpresentation.html",
+  styleUrls: ['projectpresentation.css'],
 })
 
 @Injectable({ providedIn: 'root' })
@@ -28,7 +22,7 @@ export class ProjectPresentation {
   constructor(private modalService: NgbModal) {}
 
   openModal() {
-    const modalRef = this.modalService.open(MyModalComponent, {
+    const modalRef = this.modalService.open(ModalComponent, {
     });
     modalRef.componentInstance.projectPresentation = this.projectPresentation();
 

@@ -1,20 +1,14 @@
 import { Component, inject } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {ProjectPresentation} from './projectpresentation/projectpresentation';
-import {Projects} from './projects';
-import {ProjectInfo} from './projectinfo';
+import {ProjectPresentation} from '../../components/projectpresentation/projectpresentation';
+import {Projects} from '../../components/projects';
+import {ProjectInfo} from '../../components/projectinfo';
 
 @Component({
   selector: 'app-work',
   imports: [ProjectPresentation],
-  template: `
-  <div id="gallery">
-    @for(projects of projectList; track $index) {
-      <app-projectpresentation [projectPresentation]="projects" />
-    }
-  </div>
-  `,
-  styleUrls: ['./work.css'],
+  templateUrl:"work.html",
+  styleUrls: ['work.css'],
 })
 export class Work {
   route: ActivatedRoute = inject(ActivatedRoute);

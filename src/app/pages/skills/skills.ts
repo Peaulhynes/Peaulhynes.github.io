@@ -2,13 +2,12 @@ import { Component, inject } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-skills',
   imports: [],
-  templateUrl: "about.html",
-  styleUrls: ["about.css"],
+  templateUrl: "skills.html",
+  styleUrls: ["skills.css"],
 })
-export class About {
-  readonly baseUrl = '../assets/icons';
+
+export class Skills {
   route: ActivatedRoute = inject(ActivatedRoute);
-  
 }

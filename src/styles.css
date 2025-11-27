@@ -14,3 +14,112 @@ background: radial-gradient(circle,rgba(32, 125, 105, 1) 0%, rgba(10, 55, 61, 1)
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+section{
+  margin: 0;
+  padding: 30px 20px;
+}
+
+section p{
+  color: white;
+  line-height: 30px;
+  margin:20px 40px;
+  text-align: justify;
+}
+
+section h1{
+  text-align: center;
+  color: white;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 767px) {
+  section p{
+    font-size: 16px;
+    margin:10px 20px;
+  }
+}
+
+
+.header{
+  text-align: center;
+  width: 100%;
+  margin:0px;
+}
+
+.header > h1 {
+  color: #f2f2f2;
+  display: inline-block;
+  font-size: 75px;
+  letter-spacing: -5px;
+  font-weight: bold;
+}
+
+.sub-header {
+  color: rgb(210, 210, 210);
+  display: inline-block;
+  padding-left: 30px;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .header{
+    margin-bottom: 100px;
+  }
+
+  .header > h1 {
+    font-size: 40px;
+    letter-spacing: -3px;
+  }
+  .sub-header {
+    float: left;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    display: inherit;
+  }
+  .sub-header > h2 {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+}
+
+.raise {
+  margin-top:50px;
+  margin:30px 30px 0px;
+  min-width: max-content;
+  width: 25%;
+  background-color:white;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  color: rgb(9, 57, 47);
+  transition: 0.25s;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 25px;
+}
+
+.raise a{
+  width:100%;
+  display:block;
+  text-align:center;
+  text-decoration: none;
+  color:black;
+  line-height: 50px;
+}
+
+.raise:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(85, 220, 191);
+  transform: translateY(-0.25em);
+  color:rgb(95, 201, 178);
+}
+
+@media screen and (max-width: 767px) {
+  .raise {
+    width: 40%;
+    font-size: 20px;
+    margin:0px 3px 20px 3px;
+  }
+}

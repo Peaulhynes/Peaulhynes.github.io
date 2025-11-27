@@ -1,16 +1,16 @@
 import {Routes} from '@angular/router';
-import {Home} from './home/home';
-import { About } from './about/about';
-import { Work } from './work/work';
+import {About} from './pages/about/about';
+import { Skills } from './pages/skills/skills';
+import { Work } from './pages/work/work';
 const routeConfig: Routes = [
   {
     path: '',
-    component: Home,
+    component: About,
     title: 'Pauline Wargny',
   },
   {
-    path: 'about',
-    component: About,
+    path: 'skills',
+    component: Skills,
     title: 'Pauline Wargny',
   },
   {
