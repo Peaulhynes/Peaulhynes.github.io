@@ -4,6 +4,7 @@ export interface ProjectInfo {
   presentation: string[];
   contribution?: string[];
   languages?: string[];
+  icon:string;
   photos: string[];
   exe?: string;
   code?: string;

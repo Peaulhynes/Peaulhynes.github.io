@@ -29,9 +29,9 @@ export class Projects {
         "Checkpoints", 
         "Level Streaming"
       ], 
+      icon: `${this.baseUrl}/RunGlowry_0.png`,
       photos: 
       [
-        `${this.baseUrl}/RunGlowry_0.png`,
         `${this.baseUrl}/RunGlowry_1.png`,
         `${this.baseUrl}/RunGlowry_2.png`,
         `${this.baseUrl}/RunGlowry_3.png`,
@@ -61,9 +61,9 @@ export class Projects {
         "Système de score", 
         "Récolte de collectionnables"
       ], 
+      icon: `${this.baseUrl}/ZONE_0.png`,
       photos: 
       [
-        `${this.baseUrl}/ZONE_0.png`,
         `${this.baseUrl}/ZONE_1.png`,
         `${this.baseUrl}/ZONE_2.png`,
         `${this.baseUrl}/ZONE_3.png`
@@ -90,9 +90,9 @@ export class Projects {
         "Système de combat et de vagues d'ennemis", 
         "Mise en place d'un tutoriel"
       ], 
+      icon:`${this.baseUrl}/BSOTH_0.png`,
       photos: 
       [
-        `${this.baseUrl}/BSOTH_0.png`,
         `${this.baseUrl}/BSOTH_1.png`,
         `${this.baseUrl}/BSOTH_2.png`,
         `${this.baseUrl}/BSOTH_3.png`,
@@ -121,6 +121,7 @@ export class Projects {
         "User Interface",
         "Récupération de collectionnables",
       ], 
+      icon:`${this.baseUrl}/MadForest_1.png`,
       photos: 
       [
         `${this.baseUrl}/MadForest_1.png`,
@@ -142,6 +143,7 @@ export class Projects {
         "C#", 
         "Unity"
       ],
+      icon:`${this.baseUrl}/DoodleClone_1.png`,
       photos: 
       [
         `${this.baseUrl}/DoodleClone_1.png`,
@@ -168,6 +170,7 @@ export class Projects {
         "LUA", 
         "LÖVE"
       ],
+      icon:`${this.baseUrl}/DDF_1.png`,
       photos: 
       [
         `${this.baseUrl}/DDF_1.png`,
@@ -183,6 +186,7 @@ export class Projects {
       [
         "Ce document présente les différents types de handicap majeurs (visuel, auditif, moteur, cognitif), et dépeint une analyse sociale, législative et économique de la question du handicap dans les jeux vidéo. Des solutions logicielles adaptées aux types de handicaps les plus courants sont ensuite proposées."
       ],
+      icon:`${this.baseUrl}/Memoire_1.png`,
       photos: 
       [
         `${this.baseUrl}/Memoire_1.png`,
@@ -207,9 +211,9 @@ export class Projects {
         "Express",
         "MySQL"
       ],
+      icon:`${this.baseUrl}/Scenarium_0.png`,
       photos: 
       [
-        `${this.baseUrl}/Scenarium_0.png`,
         `${this.baseUrl}/Scenarium_1.png`,
         `${this.baseUrl}/Scenarium_2.png`
       ]
@@ -228,9 +232,9 @@ export class Projects {
         "PHP",
         "MySQL"
       ],
+      icon:`${this.baseUrl}/NSaas_0.png`,
       photos: 
       [
-        `${this.baseUrl}/NSaas_0.png`,
         `${this.baseUrl}/NSaas_1.png`,
         `${this.baseUrl}/NSaas_2.png`,
         `${this.baseUrl}/NSaas_3.png`

@@ -1,96 +1,54 @@
-
-<!--<div class="modal-header">
-  <h4 class="modal-title">Test modal</h4>
-</div>
-
-<div class="modal-body">
-  <p>{{projectPresentation?.name}}</p>
-</div>
-<div class="modal-footer">
-  <button class="btn btn-secondary" (click)="activeModal.dismiss()">Annuler</button>
-  <button class="btn btn-primary" (click)="activeModal.close('ok')">Valider</button>
-</div>-->
-
-<div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="btn btn-secondary" (click)="activeModal.dismiss()">Annuler</button>
-          </div>
-         <div class="modal-body">
-            <h1>{{ projectPresentation.name }}</h1>
-            <div class="container">
-              <div class="row">
+<div class="modal-content">
+    <div class="modal-header">
+        <button class="modal-button" (click)="activeModal.dismiss()"></button>
+    </div>
+    <div class="modal-body">
+        <h1>{{ projectPresentation.name }}</h1>
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-6">
-                  <div class="description">
-                    <h3>Présentation</h3>
-                    @for(projectPresentationLine of projectPresentation.presentation; track $index) {
-                      <p>{{ projectPresentationLine }}</p>
-                    }
-                  
-                    <br>
+                    <div class="description">
+                        <h2>Présentation</h2>
+                        @for(projectPresentationLine of projectPresentation.presentation; track $index) {
+                        <p>{{ projectPresentationLine }}</p>
+                        }
 
-                    @if(projectPresentation.contribution){
-                      <h3>Contribution personnelle</h3>
-                      <ul>
-                      @for(projectPresentationContribution of projectPresentation.contribution; track $index) {
-                        <li>{{ projectPresentationContribution }}</li>
-                      }
-                      </ul>
-                    }
-                  
-                    <div class="liste-langages">
-                      @if (projectPresentation.languages){
-                      @for(projectPresentationLanguage of projectPresentation.languages; track $index) {
-                        <div class="langage-encadre">{{ projectPresentationLanguage }}</div>
-                      }
-                    }
-                    </div>
-                  </div>
-                </div>
+                        <br>
 
-                <div class="col-lg-6">
-                    <div class="carousel-inner">
-                      @for(projectPresentationPhoto of projectPresentation.photos; track $index) {
-                        <div class="carousel-item active">
-                        <img src="{{ projectPresentationPhoto }}" class="d-block w-100" alt="...">
+                        @if(projectPresentation.contribution){
+                        <h2>Contribution personnelle</h2>
+                        <ul>
+                            @for(projectPresentationContribution of projectPresentation.contribution; track $index) {
+                            <li>{{ projectPresentationContribution }}</li>
+                            }
+                        </ul>
+                        }
+
+                        <div class="language-list">
+                            @for(projectPresentationLanguage of projectPresentation.languages; track $index) {
+                            <div class="language">{{ projectPresentationLanguage }}</div>
+                            }
+
                         </div>
-                      }
-                    
                     </div>
-
-                  <div id="carousel-notitle" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-notitle"
-                      data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-notitle"
-                      data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-
-
-                    <div class="carousel-indicators">
-                      @for(projectPresentationPhoto of projectPresentation.photos; track $index) {
-                        <button type="button" data-bs-target="#carousel-notitle" class="active"
-                        aria-current="true" aria-label="Slide {{ $index }}"></button>
-                      }
-                    
-                    </div>
-                  </div>
                 </div>
-              </div>
+                <div class="col-lg-6">
+                    <mdb-carousel [controls]="true" [animation]="'fade'">
+                        @for(projectPresentationPhoto of projectPresentation.photos; track $index) {
+                        <mdb-carousel-item>
+                            <img src="{{ projectPresentationPhoto }}" class="d-block w-100" alt="...">
+                        </mdb-carousel-item>
+                        }
 
-              @if(projectPresentation.code){
-                <button class="raise"><a href="{{projectPresentation.code}}" target="_blank">Code</a></button>
-              }
-
-              @if(projectPresentation.exe){
-                <button class="raise"><a href="{{projectPresentation.exe}}" target="_blank">Download</a></button>
-              }
-              
+                    </mdb-carousel>
+                </div>
             </div>
-          </div> 
+            @if(projectPresentation.code){
+            <button class="raise"><a href="{{projectPresentation.code}}" target="_blank">Code</a></button>
+            }
+            @if(projectPresentation.exe){
+            <button class="raise"><a href="{{projectPresentation.exe}}" target="_blank">Télécharger</a></button>
+            }
         </div>
-      </div>
+    </div>
+</div>

@@ -11,9 +11,9 @@ import { MyModalComponent } from '../../my-modal/my-modal';
   imports: [CommonModule],
   template: `
 
-  <button class="projectimage" (click)="openModal()" style="background-image:url('{{ projectPresentation().photos[0] }}')">
+  <button class="projectimage" (click)="openModal()" style="background-image:url('{{ projectPresentation().icon }}')">
   <figcaption>{{ projectPresentation().name }}</figcaption>
-</button>
+  </button>
 
   `,
   styleUrls: ['./projectpresentation.css'],
