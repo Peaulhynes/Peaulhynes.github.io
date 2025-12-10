@@ -46,14 +46,12 @@
   user-select: none;
 }
 
-.projectimage:hover,
-.projectimage:focus{
+.projectimage:hover{
   transform:scale(1.1);
   z-index:50;
 }
 
-.projectimage:hover figcaption,
-.projectimage:focus figcaption{
+.projectimage:hover figcaption{
   opacity:1;
   transition:400ms;
 }
