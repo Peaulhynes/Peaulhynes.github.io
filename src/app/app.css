@@ -1,7 +1,3 @@
-.menu-btn {
-  display: none;
-}
-
 .header-container {
   width: 100%;
   margin: 0;
@@ -43,10 +39,43 @@
 }
 
 @media screen and (max-width: 767px) {
-  .menu-btn {
-    display: block;
+  
+  .site-navbar {
+    min-height: 60px;
   }
 
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+  }
+
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-navbar ul li a {
+    padding: 25px;
+    font-size: 30px !important;
+  }
+
+  .site-navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, .1);
+  }
+
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
 }
 
 .menu-btn {
@@ -63,15 +92,6 @@
   background: transparent;
   border: none;
   cursor: pointer;
-}
-
-.burger-line {
-  width: 24px;
-  height: 3px;
-  background: white;
-  margin: 3px 0;
-  border-radius: 2px;
-  transition: all 0.4s ease;
 }
 
 .top-menu {
@@ -109,11 +129,8 @@
   justify-content: center;
 }
 
-
-/* Bouton burger visible par défaut */
 .menu-btn {
   display: flex;
-
 }
 
 .topbar {
@@ -131,6 +148,10 @@
 
   .topbar {
     display: none !important;
+  }
+
+  .menu-btn {
+    display: none;
   }
 }
 
