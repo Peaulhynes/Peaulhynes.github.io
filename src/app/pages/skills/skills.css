@@ -1,24 +1,23 @@
-.cv {
-  padding: 50px 0px;
-  display: flex;
+.section-cv{
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.col-lg-5 .photo {
-  width: 70%;
-  border-radius: 15px;
-}
-
-.col-lg-7 {
+.cv {
+  padding: 5% 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.col-lg-6 {
-  vertical-align: middle;
+.photo {
+  width: 80%;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skills-content {
