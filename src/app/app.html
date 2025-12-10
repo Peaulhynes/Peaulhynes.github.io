@@ -2,19 +2,25 @@
   <div class="navbar-area">
     <div class="header-container">
       <nav class="site-navbar">
-        <div class="site-logo"></div>
         <ul>
           <li><a [routerLink]="['/']">A PROPOS</a></li>
           <li><a [routerLink]="['/skills']">COMPETENCES</a></li>
           <li><a [routerLink]="['/work']">PROJETS</a></li>
         </ul>
-        <button class="nav-toggler">
-          <span></span>
-        </button>
       </nav>
     </div>
   </div>
-  <section class="content">
-    <router-outlet />
-  </section>
+  <mat-toolbar color="primary" class="topbar">
+    <button mat-icon-button class="menu-btn" (click)="toggle()">
+      <mat-icon>{{ menuOpen ? 'close' : 'menu' }}</mat-icon>
+    </button>
+  </mat-toolbar>
+  <div class="top-menu" [class.open]="menuOpen">
+    <nav>
+      <a [routerLink]="['/']" mat-button (click)="close()">A PROPOS</a>
+      <a [routerLink]="['/skills']" mat-button (click)="close()">COMPETENCES</a>
+      <a [routerLink]="['/work']" mat-button (click)="close()">PROJETS</a>
+    </nav>
+  </div>
+  <router-outlet />
 </main>

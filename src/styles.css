@@ -1,54 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@fortawesome/fontawesome-free/css/all.css';
 @import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
-*{
+
+* {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{ 
+
+body {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='3840' height='2160' preserveAspectRatio='none' viewBox='0 0 3840 2160'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1073%26quot%3b)' fill='none'%3e%3crect width='3840' height='2160' x='0' y='0' fill='rgba(24%2c 100%2c 88%2c 1)'%3e%3c/rect%3e%3cpath d='M599.554631286412-55.57945686410059L150.70705076747566-304.3797334684225-98.09322583684627 144.46784705051385 350.75435468209014 393.2681236548358z' fill='rgba(1%2c 14%2c 13%2c 0.51)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M169.13369524472134 660.384234718101L103.66370322192583 1126.227433681836 569.5069021856607 1191.6974257046313 634.9768942084562 725.8542267408965z' fill='rgba(1%2c 14%2c 13%2c 0.51)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1499.411%2c1070.59C1689.163%2c1063.988%2c1811.116%2c894.851%2c1909.334%2c732.362C2012.599%2c561.524%2c2134.738%2c359.38%2c2033.198%2c187.511C1932.487%2c17.045%2c1697.403%2c39.267%2c1499.411%2c38.515C1299.366%2c37.755%2c1066.224%2c14.83%2c958.552%2c183.428C846.144%2c359.442%2c928.203%2c584.396%2c1036.916%2c762.715C1140.241%2c932.198%2c1301.035%2c1077.492%2c1499.411%2c1070.59' fill='rgba(1%2c 14%2c 13%2c 0.51)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M321.567%2c2084.225C501.084%2c2085.335%2c642.131%2c1951.468%2c734.057%2c1797.27C828.788%2c1638.366%2c888.658%2c1445.295%2c798.903%2c1283.529C707.084%2c1118.043%2c510.81%2c1055.722%2c321.567%2c1053.84C128.35%2c1051.918%2c-79.802%2c1104.33%2c-172.505%2c1273.867C-262.691%2c1438.802%2c-180.035%2c1631.719%2c-82.178%2c1792.221C10.492%2c1944.214%2c143.554%2c2083.124%2c321.567%2c2084.225' fill='rgba(1%2c 14%2c 13%2c 0.51)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1745.8026132617176 947.5379783178034L2225.825361645871 1379.7524023178592 2658.0397856459267 899.7296539337057 2178.017037261773 467.51522993364995z' fill='rgba(1%2c 14%2c 13%2c 0.51)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M3065.182973322683 1582.0980705733946L3667.549006785452 1677.503477653906 3762.9544138659635 1075.137444191137 3160.5883804031946 979.7320371106258z' fill='rgba(1%2c 14%2c 13%2c 0.51)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1073'%3e%3crect width='3840' height='2160' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
-  color:white;
+  color: white;
   font-size: 16px;
   font-weight: 500;
+  margin: 0;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-section{
+html,
+body {
+  height: 100%;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+section {
   margin: 0;
   padding: 30px 20px;
 }
 
-section p{
+section p {
   color: white;
   line-height: 30px;
-  margin:20px 40px;
+  margin: 20px 40px;
   text-align: justify;
 }
 
-section h1{
+section h1 {
   text-align: center;
   color: white;
   font-weight: 800;
 }
 
 @media screen and (max-width: 767px) {
-  section p{
+  section p {
     font-size: 16px;
-    margin:10px 20px;
+    margin: 10px 20px;
   }
 }
 
-
-.header{
+.header {
   text-align: center;
   width: 100%;
-  margin:0px;
+  margin: 0px;
 }
 
-.header > h1 {
+.header>h1 {
   color: #f2f2f2;
   display: inline-block;
   font-size: 75px;
@@ -64,11 +74,10 @@ section h1{
 }
 
 @media screen and (max-width: 767px) {
-  .header{
+  .header {
     margin-bottom: 100px;
   }
-
-  .header > h1 {
+  .header>h1 {
     font-size: 40px;
     letter-spacing: -3px;
   }
@@ -79,19 +88,19 @@ section h1{
     width: 100%;
     display: inherit;
   }
-  .sub-header > h2 {
+  .sub-header>h2 {
     float: left;
     width: 100%;
     margin: 0;
-}
+  }
 }
 
 .raise {
-  margin-top:50px;
-  margin:30px 30px 0px;
+  margin-top: 50px;
+  margin: 30px 30px 0px;
   min-width: max-content;
   width: 25%;
-  background-color:white;
+  background-color: white;
   border: 2px solid;
   font: inherit;
   line-height: 1;
@@ -102,25 +111,25 @@ section h1{
   font-size: 25px;
 }
 
-.raise a{
-  width:100%;
-  display:block;
-  text-align:center;
+.raise a {
+  width: 100%;
+  display: block;
+  text-align: center;
   text-decoration: none;
-  color:black;
+  color: black;
   line-height: 50px;
 }
 
 .raise:hover {
   box-shadow: 0 0.5em 0.5em -0.4em rgb(85, 220, 191);
   transform: translateY(-0.25em);
-  color:rgb(95, 201, 178);
+  color: rgb(95, 201, 178);
 }
 
 @media screen and (max-width: 767px) {
   .raise {
     width: 40%;
     font-size: 20px;
-    margin:20px 3px;
+    margin: 20px 3px;
   }
 }

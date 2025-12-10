@@ -1,13 +1,16 @@
-/* navbar regular css start */
+.menu-btn {
+  display: none;
+}
+
 .header-container {
   width: 100%;
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
 }
 
 .navbar-area {
-  background: rgba(0,0,0,0.9);
-  border-bottom: 1px rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px rgba(0, 0, 0, 0.9);
 }
 
 .site-navbar {
@@ -35,86 +38,111 @@
 }
 
 .site-navbar ul li a:hover {
-  background: rgba(255,255,255,.1);
+  background: rgba(255, 255, 255, .1);
   transition: all 0.2s ease-in-out;
 }
-/* navbar regular css end */
 
-
-/* nav-toggler css start */
-.nav-toggler {
-  border: none;
-  padding: 5px;
-  background-color: transparent;
-  cursor: pointer;
-  height: 39px;
-  display: none;
-}
-.nav-toggler span, 
-.nav-toggler span:before, 
-.nav-toggler span:after {
-  width: 28px;
-  height: 3px;
-  background-color: #fff;
-  display: block;
-  transition: .3s;
-}
-.nav-toggler span:before {
-  content: '';
-  transform: translateY(-9px);
-}
-.nav-toggler span:after {
-  content: '';
-  transform: translateY(6px);
-}
-.nav-toggler.toggler-open span {
-  background-color: transparent;
-}
-.nav-toggler.toggler-open span:before {
-  transform: translateY(0px) rotate(45deg);
-}
-.nav-toggler.toggler-open span:after {
-  transform: translateY(-3px) rotate(-45deg);
-}
-
-/* mobile breakpoint start */
 @media screen and (max-width: 767px) {
-  .container {
-    max-width: 720px;
-  }
-  /* navbar css for mobile start */
-  .nav-toggler{
+  .menu-btn {
     display: block;
   }
-  .site-navbar {
-    min-height: 60px;
+
+}
+
+.menu-btn {
+  position: fixed;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 24px;
+  height: 3px;
+  background: white;
+  margin: 3px 0;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+.top-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 2500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.35s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.top-menu.open {
+  height: 100vh;
+}
+
+.top-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.top-menu a {
+  font-size: 26px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Bouton burger visible par défaut */
+.menu-btn {
+  display: flex;
+
+}
+
+.topbar {
+  display: flex;
+}
+
+@media (min-width: 767px) {
+  .mat-toolbar {
+    display: none;
   }
-  .site-navbar ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 60px);
-    left: 0;
-    top: 60px;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0,0,0, 0.9);
-    max-height: 0;
-    overflow: hidden;
-    transition: .3s;
+
+  .top-menu {
+    display: none;
   }
-  .site-navbar ul li {
-    width: 100%;
-    text-align: center;
+
+  .topbar {
+    display: none !important;
   }
-  .site-navbar ul li a {
-    padding: 25px;
-    font-size:30px !important;
-  }
-  .site-navbar ul li a:hover {
-    background-color: rgba(255,255,255,.1);
-  }
-  .site-navbar ul.open {
-    max-height: 100vh;
-    overflow: visible;
-  }
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  z-index: 3000;
+  background: black;
 }
