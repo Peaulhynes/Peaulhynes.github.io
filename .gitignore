@@ -1,4 +1,37 @@
-/node_modules
-.vscode/*
-/.angular/cache
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Angular build
 /dist
+/out-tsc
+
+# IDE / Editor
+/.idea
+/.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+
+# Environment files
+/src/environments/*.ts
+!src/environments/environment.prod.ts
+
+# Temporary files
+/tmp
+/temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: compiled Angular CLI files
+.angular/cache
+.angular/cli.json

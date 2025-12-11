@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "first-app": {
+    "pauline-wargny-portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -50,7 +50,7 @@
                 ]
               }
             },
-            "outputPath": "dist/first-app",
+            "outputPath": "dist/pauline-wargny-portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -60,7 +60,6 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
