@@ -29,15 +29,15 @@ export class Projects {
         "Checkpoints", 
         "Level Streaming"
       ], 
-      icon: `${this.baseUrl}/RunGlowry_0.png`,
+      icon: `${this.baseUrl}/RunGlowry_0.webp`,
       photos: 
       [
-        `${this.baseUrl}/RunGlowry_1.png`,
-        `${this.baseUrl}/RunGlowry_2.png`,
-        `${this.baseUrl}/RunGlowry_3.png`,
-        `${this.baseUrl}/RunGlowry_4.png`,
-        `${this.baseUrl}/RunGlowry_5.png`,
-        `${this.baseUrl}/RunGlowry_6.png`,
+        `${this.baseUrl}/RunGlowry_1.webp`,
+        `${this.baseUrl}/RunGlowry_2.webp`,
+        `${this.baseUrl}/RunGlowry_3.webp`,
+        `${this.baseUrl}/RunGlowry_4.webp`,
+        `${this.baseUrl}/RunGlowry_5.webp`,
+        `${this.baseUrl}/RunGlowry_6.webp`,
       ],
       exe: "https://drive.google.com/file/d/1wjwE_u0fTCCdGhgsCd0InJM7VNnAR5_f/view?usp=sharing"
     },
@@ -57,11 +57,11 @@ export class Projects {
         "Express",
         "MySQL"
       ],
-      icon:`${this.baseUrl}/Scenarium_0.png`,
+      icon:`${this.baseUrl}/Scenarium_0.webp`,
       photos: 
       [
-        `${this.baseUrl}/Scenarium_1.png`,
-        `${this.baseUrl}/Scenarium_2.png`
+        `${this.baseUrl}/Scenarium_1.webp`,
+        `${this.baseUrl}/Scenarium_2.webp`
       ]
     },
     {
@@ -78,12 +78,12 @@ export class Projects {
         "PHP",
         "MySQL"
       ],
-      icon:`${this.baseUrl}/NSaas_0.png`,
+      icon:`${this.baseUrl}/NSaas_0.webp`,
       photos: 
       [
-        `${this.baseUrl}/NSaas_1.png`,
-        `${this.baseUrl}/NSaas_2.png`,
-        `${this.baseUrl}/NSaas_3.png`
+        `${this.baseUrl}/NSaas_1.webp`,
+        `${this.baseUrl}/NSaas_2.webp`,
+        `${this.baseUrl}/NSaas_3.webp`
       ]
     },
     {
@@ -99,11 +99,11 @@ export class Projects {
         "C#", 
         "Unity"
       ],
-      icon:`${this.baseUrl}/DoodleClone_1.png`,
+      icon:`${this.baseUrl}/DoodleClone_1.webp`,
       photos: 
       [
-        `${this.baseUrl}/DoodleClone_1.png`,
-        `${this.baseUrl}/DoodleClone_2.png`
+        `${this.baseUrl}/DoodleClone_1.webp`,
+        `${this.baseUrl}/DoodleClone_2.webp`
       ],
       code: "https://github.com/Peaulhynes/DoodleClone",
       exe: "https://drive.google.com/file/d/1zuyNyUdwVwjUla-1PIQrt_ymu6NxYZdG/view?usp=sharing"
@@ -129,11 +129,11 @@ export class Projects {
         "User Interface",
         "Récupération de collectionnables",
       ], 
-      icon:`${this.baseUrl}/MadForest_1.png`,
+      icon:`${this.baseUrl}/MadForest_1.webp`,
       photos: 
       [
-        `${this.baseUrl}/MadForest_1.png`,
-        `${this.baseUrl}/MadForest_2.png`
+        `${this.baseUrl}/MadForest_1.webp`,
+        `${this.baseUrl}/MadForest_2.webp`
       ],
       code: "https://github.com/Peaulhynes/MarioSFML",
       exe: "https://drive.google.com/file/d/1eVCkaDcFG67tRsOmWQMKnIC-JJwwytP8/view?usp=sharing"
@@ -158,12 +158,12 @@ export class Projects {
         "Système de score", 
         "Récolte de collectionnables"
       ], 
-      icon: `${this.baseUrl}/ZONE_0.png`,
+      icon: `${this.baseUrl}/ZONE_0.webp`,
       photos: 
       [
-        `${this.baseUrl}/ZONE_1.png`,
-        `${this.baseUrl}/ZONE_2.png`,
-        `${this.baseUrl}/ZONE_3.png`
+        `${this.baseUrl}/ZONE_1.webp`,
+        `${this.baseUrl}/ZONE_2.webp`,
+        `${this.baseUrl}/ZONE_3.webp`
       ],
       exe: "https://drive.google.com/file/d/1yurQtzcP12uqgUZFB6dnssnvvkR06WyU/view?usp=sharing",
       code: "https://drive.google.com/file/d/1TZuDVbcjtA8NMNLYmI28YMzAd_sCSPXE/view?usp=sharing"
@@ -187,13 +187,13 @@ export class Projects {
         "Système de combat et de vagues d'ennemis", 
         "Mise en place d'un tutoriel"
       ], 
-      icon:`${this.baseUrl}/BSOTH_0.png`,
+      icon:`${this.baseUrl}/BSOTH_0.webp`,
       photos: 
       [
-        `${this.baseUrl}/BSOTH_1.png`,
-        `${this.baseUrl}/BSOTH_2.png`,
-        `${this.baseUrl}/BSOTH_3.png`,
-        `${this.baseUrl}/BSOTH_4.png`
+        `${this.baseUrl}/BSOTH_1.webp`,
+        `${this.baseUrl}/BSOTH_2.webp`,
+        `${this.baseUrl}/BSOTH_3.webp`,
+        `${this.baseUrl}/BSOTH_4.webp`
       ],
       exe: "https://drive.google.com/file/d/1l1DEjYfTqgL9HHWFcbwQ-H7xlebV3z7Y/view?usp=sharing"
     },
@@ -215,12 +215,12 @@ export class Projects {
         "LUA", 
         "LÖVE"
       ],
-      icon:`${this.baseUrl}/DDF_1.png`,
+      icon:`${this.baseUrl}/DDF_1.webp`,
       photos: 
       [
-        `${this.baseUrl}/DDF_1.png`,
-        `${this.baseUrl}/DDF_2.png`,
-        `${this.baseUrl}/DDF_3.png`
+        `${this.baseUrl}/DDF_1.webp`,
+        `${this.baseUrl}/DDF_2.webp`,
+        `${this.baseUrl}/DDF_3.webp`
       ],
       code: "https://framagit.org/prouby/defense-de-fuir"
     },
@@ -231,12 +231,12 @@ export class Projects {
       [
         "Ce document présente les différents types de handicap majeurs (visuel, auditif, moteur, cognitif), et dépeint une analyse sociale, législative et économique de la question du handicap dans les jeux vidéo. Des solutions logicielles adaptées aux types de handicaps les plus courants sont ensuite proposées."
       ],
-      icon:`${this.baseUrl}/Memoire_1.png`,
+      icon:`${this.baseUrl}/Memoire_1.webp`,
       photos: 
       [
-        `${this.baseUrl}/Memoire_1.png`,
-        `${this.baseUrl}/Memoire_2.png`,
-        `${this.baseUrl}/Memoire_3.png`
+        `${this.baseUrl}/Memoire_1.webp`,
+        `${this.baseUrl}/Memoire_2.webp`,
+        `${this.baseUrl}/Memoire_3.webp`
       ],
       exe: "../../../assets/documents/PreMemoire_PaulineWargny.pdf"
     },
