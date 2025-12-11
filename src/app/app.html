@@ -22,5 +22,11 @@
       <a [routerLink]="['/work']" mat-button (click)="close()">PROJETS</a>
     </nav>
   </div>
+  <button 
+  class="back-to-top" 
+  *ngIf="showBackToTop" 
+  (click)="backToTop()">
+  <mat-icon>keyboard_arrow_up</mat-icon>
+</button>
   <router-outlet />
 </main>
