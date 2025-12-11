@@ -36,7 +36,7 @@
                     <mdb-carousel [controls]="true" [animation]="'fade'">
                         @for(projectPresentationPhoto of projectPresentation.photos; track $index) {
                         <mdb-carousel-item>
-                            <img src="{{ projectPresentationPhoto }}" class="d-block w-100" alt="...">
+                            <img src="{{ projectPresentationPhoto }}" class="d-block w-100" alt="..." loading="lazy">
                         </mdb-carousel-item>
                         }
 
