@@ -43,65 +43,73 @@ export class Projects {
     },
     {
       id: 1,
-      name: "Ze Orbitale Nation Escape",
+      name: "Scenarium",
       presentation:
       [
-        "“Entouré d'une bulle de protection de plus en plus petite, vous devrez ramasser suffisamment de combustible pour repartir de la planète radioactive où vous êtes coincé. Attention, les aliens ne vous laisseront sûrement pas récolter tranquillement sans rien faire.”", 
-        "ZONE est un jeu survival sur PC développé par une équipe de quatre artistes, trois développeurs et un game designer, pendant une Game Jam de 72h sur le thème “Limited Space”."
+        "Cette application est conçue à destination des joueurs de jeu de rôle (type Donjons et Dragons). Elle permet la centralisation de toutes les données liés à leur univers de jeu, telles que le nom des joueurs, les mondes, les statistiques des personnages, etc.", 
+        "Projet mené sur le long terme en équipe variable (participation personnelle sur un an)."
       ],
       languages: 
       [
-        "Unreal Engine 4", 
-        "C++", 
-        "Blueprints"
+        "Javascript", 
+        "HTML/CSS",
+        "VueJS",
+        "Express",
+        "MySQL"
       ],
-      contribution:
-      [
-        "User Interface", 
-        "Système de score", 
-        "Récolte de collectionnables"
-      ], 
-      icon: `${this.baseUrl}/ZONE_0.png`,
+      icon:`${this.baseUrl}/Scenarium_0.png`,
       photos: 
       [
-        `${this.baseUrl}/ZONE_1.png`,
-        `${this.baseUrl}/ZONE_2.png`,
-        `${this.baseUrl}/ZONE_3.png`
-      ],
-      exe: "https://drive.google.com/file/d/1yurQtzcP12uqgUZFB6dnssnvvkR06WyU/view?usp=sharing",
-      code: "https://drive.google.com/file/d/1TZuDVbcjtA8NMNLYmI28YMzAd_sCSPXE/view?usp=sharing"
+        `${this.baseUrl}/Scenarium_1.png`,
+        `${this.baseUrl}/Scenarium_2.png`
+      ]
     },
     {
       id: 2,
-      name: "Big Sword of the Hell",
+      name: "Module NormSaas",
       presentation:
       [
-        "“Tout est arme. Vos ennemis sont des armes, vous êtes une arme. Votre but : éliminer vos ennemis et passer le plus de vagues possible sans tomber au combat.”", 
-        "BSOTH est un jeu sur PC de type Beat Them All développé par une équipe de trois artistes et deux développeurs, pendant une Game Jam de 48h sur le thème “Tout est arme”."
+        "Ce projet développé au sein de l'entreprise NORMAD1 est un client léger de traitement de fichiers d’adresses postales. Il permet de réaliser des traitements RNVP (Restructuration, Normalisation et Validation postale) en mode SaaS (Software As A Service) : analyse, détection et correction si possible des erreurs d’une adresse conformément à la norme postale en vigueur."
       ],
       languages: 
       [
-        "Unreal Engine 4", 
-        "C++", 
-        "Blueprints"
+        "Javacript", 
+        "HTML/CSS",
+        "PHP",
+        "MySQL"
       ],
-      contribution:
-      [
-        "Système de combat et de vagues d'ennemis", 
-        "Mise en place d'un tutoriel"
-      ], 
-      icon:`${this.baseUrl}/BSOTH_0.png`,
+      icon:`${this.baseUrl}/NSaas_0.png`,
       photos: 
       [
-        `${this.baseUrl}/BSOTH_1.png`,
-        `${this.baseUrl}/BSOTH_2.png`,
-        `${this.baseUrl}/BSOTH_3.png`,
-        `${this.baseUrl}/BSOTH_4.png`
-      ],
-      exe: "https://drive.google.com/file/d/1l1DEjYfTqgL9HHWFcbwQ-H7xlebV3z7Y/view?usp=sharing"
+        `${this.baseUrl}/NSaas_1.png`,
+        `${this.baseUrl}/NSaas_2.png`,
+        `${this.baseUrl}/NSaas_3.png`
+      ]
     },
     {
       id: 3,
+      name: "Doodle Clone",
+      presentation:
+      [
+        "Doodle Clone est un jeu de plateformes en 2D développé en solo.", 
+        "Basé sur le jeu “Doodle Jump”, cette version inclut l’ajout d’une ombre reproduisant exactement les mouvements du joueur, à l’image de l’ombre de Mario dans Mario Galaxy. L’ombre ne doit pas toucher le joueur, ou c’est un game over."
+      ],
+      languages: 
+      [
+        "C#", 
+        "Unity"
+      ],
+      icon:`${this.baseUrl}/DoodleClone_1.png`,
+      photos: 
+      [
+        `${this.baseUrl}/DoodleClone_1.png`,
+        `${this.baseUrl}/DoodleClone_2.png`
+      ],
+      code: "https://github.com/Peaulhynes/DoodleClone",
+      exe: "https://drive.google.com/file/d/1zuyNyUdwVwjUla-1PIQrt_ymu6NxYZdG/view?usp=sharing"
+    },
+    {
+      id: 4,
       name: "Mad Forest",
       presentation:
       [
@@ -131,29 +139,66 @@ export class Projects {
       exe: "https://drive.google.com/file/d/1eVCkaDcFG67tRsOmWQMKnIC-JJwwytP8/view?usp=sharing"
     },
     {
-      id: 4,
-      name: "Doodle Clone",
+      id: 5,
+      name: "Ze Orbitale Nation Escape",
       presentation:
       [
-        "Doodle Clone est un jeu de plateformes en 2D développé en solo.", 
-        "Basé sur le jeu “Doodle Jump”, cette version inclut l’ajout d’une ombre reproduisant exactement les mouvements du joueur, à l’image de l’ombre de Mario dans Mario Galaxy. L’ombre ne doit pas toucher le joueur, ou c’est un game over."
+        "“Entouré d'une bulle de protection de plus en plus petite, vous devrez ramasser suffisamment de combustible pour repartir de la planète radioactive où vous êtes coincé. Attention, les aliens ne vous laisseront sûrement pas récolter tranquillement sans rien faire.”", 
+        "ZONE est un jeu survival sur PC développé par une équipe de quatre artistes, trois développeurs et un game designer, pendant une Game Jam de 72h sur le thème “Limited Space”."
       ],
       languages: 
       [
-        "C#", 
-        "Unity"
+        "Unreal Engine 4", 
+        "C++", 
+        "Blueprints"
       ],
-      icon:`${this.baseUrl}/DoodleClone_1.png`,
+      contribution:
+      [
+        "User Interface", 
+        "Système de score", 
+        "Récolte de collectionnables"
+      ], 
+      icon: `${this.baseUrl}/ZONE_0.png`,
       photos: 
       [
-        `${this.baseUrl}/DoodleClone_1.png`,
-        `${this.baseUrl}/DoodleClone_2.png`
+        `${this.baseUrl}/ZONE_1.png`,
+        `${this.baseUrl}/ZONE_2.png`,
+        `${this.baseUrl}/ZONE_3.png`
       ],
-      code: "https://github.com/Peaulhynes/DoodleClone",
-      exe: "https://drive.google.com/file/d/1zuyNyUdwVwjUla-1PIQrt_ymu6NxYZdG/view?usp=sharing"
+      exe: "https://drive.google.com/file/d/1yurQtzcP12uqgUZFB6dnssnvvkR06WyU/view?usp=sharing",
+      code: "https://drive.google.com/file/d/1TZuDVbcjtA8NMNLYmI28YMzAd_sCSPXE/view?usp=sharing"
     },
     {
-      id: 5,
+      id: 6,
+      name: "Big Sword of the Hell",
+      presentation:
+      [
+        "“Tout est arme. Vos ennemis sont des armes, vous êtes une arme. Votre but : éliminer vos ennemis et passer le plus de vagues possible sans tomber au combat.”", 
+        "BSOTH est un jeu sur PC de type Beat Them All développé par une équipe de trois artistes et deux développeurs, pendant une Game Jam de 48h sur le thème “Tout est arme”."
+      ],
+      languages: 
+      [
+        "Unreal Engine 4", 
+        "C++", 
+        "Blueprints"
+      ],
+      contribution:
+      [
+        "Système de combat et de vagues d'ennemis", 
+        "Mise en place d'un tutoriel"
+      ], 
+      icon:`${this.baseUrl}/BSOTH_0.png`,
+      photos: 
+      [
+        `${this.baseUrl}/BSOTH_1.png`,
+        `${this.baseUrl}/BSOTH_2.png`,
+        `${this.baseUrl}/BSOTH_3.png`,
+        `${this.baseUrl}/BSOTH_4.png`
+      ],
+      exe: "https://drive.google.com/file/d/1l1DEjYfTqgL9HHWFcbwQ-H7xlebV3z7Y/view?usp=sharing"
+    },
+    {
+      id: 7,
       name: "Défense de fuir",
       presentation:
       [
@@ -180,7 +225,7 @@ export class Projects {
       code: "https://framagit.org/prouby/defense-de-fuir"
     },
     {
-      id: 6,
+      id: 8,
       name: "L'accessibilité dans les jeux vidéo",
       presentation:
       [
@@ -195,51 +240,7 @@ export class Projects {
       ],
       exe: "../../../assets/documents/PreMemoire_PaulineWargny.pdf"
     },
-    {
-      id: 7,
-      name: "Scenarium",
-      presentation:
-      [
-        "Cette application est conçue à destination des joueurs de jeu de rôle (type Donjons et Dragons). Elle permet la centralisation de toutes les données liés à leur univers de jeu, telles que le nom des joueurs, les mondes, les statistiques des personnages, etc.", 
-        "Projet mené sur le long terme en équipe variable (participation personnelle sur un an)."
-      ],
-      languages: 
-      [
-        "Javascript", 
-        "HTML/CSS",
-        "VueJS",
-        "Express",
-        "MySQL"
-      ],
-      icon:`${this.baseUrl}/Scenarium_0.png`,
-      photos: 
-      [
-        `${this.baseUrl}/Scenarium_1.png`,
-        `${this.baseUrl}/Scenarium_2.png`
-      ]
-    },
-    {
-      id: 8,
-      name: "Module NormSaas",
-      presentation:
-      [
-        "Ce projet développé au sein de l'entreprise NORMAD1 est un client léger de traitement de fichiers d’adresses postales. Il permet de réaliser des traitements RNVP (Restructuration, Normalisation et Validation postale) en mode SaaS (Software As A Service) : analyse, détection et correction si possible des erreurs d’une adresse conformément à la norme postale en vigueur."
-      ],
-      languages: 
-      [
-        "Javacript", 
-        "HTML/CSS",
-        "PHP",
-        "MySQL"
-      ],
-      icon:`${this.baseUrl}/NSaas_0.png`,
-      photos: 
-      [
-        `${this.baseUrl}/NSaas_1.png`,
-        `${this.baseUrl}/NSaas_2.png`,
-        `${this.baseUrl}/NSaas_3.png`
-      ]
-    },
+    
   ];
   getAllProjects(): ProjectInfo[] {
     return this.projectList;
