@@ -8,6 +8,7 @@ const routeConfig: Routes = [
     path: '',
     component: About,
     title: 'Pauline Wargny',
+    loadComponent: () => import('./pages/about/about').then(m => m.About)
   },
   {
     path: 'skills',
