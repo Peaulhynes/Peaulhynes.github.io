@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: rgb(9, 57, 47);
+  background-image:url("assets/screenshots/background.svg");
   color: white;
   font-size: 16px;
   font-weight: 500;
